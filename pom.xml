@@ -140,15 +140,16 @@
                     <groupId>net.alchim31.maven</groupId>
                     <artifactId>scala-maven-plugin</artifactId>
                     <version>3.0.2</version>
-                    <executions>  
+                    <executions>
                         <execution>
+                            <id>compile-scala-first</id>
                             <phase>process-resources</phase> <!-- to support mix java/scala -->
                             <goals>
                                 <goal>add-source</goal> <!-- to support mix java/scala -->
                                 <goal>compile</goal>
                                 <goal>testCompile</goal>
-                            </goals>  
-                        </execution>  
+                            </goals>
+                        </execution>
                     </executions> 
                     <configuration>
                         <scalaVersion>${scala.version}</scalaVersion>
