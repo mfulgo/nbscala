@@ -66,6 +66,15 @@ abstract class JavaStubGenerator {
   private var isObject = false
   private var isCompanion = false
 
+  /**
+   * Generates Java code (a class or interface) based on Scala symbol objects from the Scala compiler.
+   *
+   * @param pkgName Required non-null. The name of the package to which the class will belong.
+   * @param clzName The name of the class, object, or trait.
+   * @param syms An array of three Symbols corresponding to class, object, trait. Some may be null depending on the class being generated.
+   * @throws java.io.FileNotFoundException
+   * @return
+   */
   @throws(classOf[FileNotFoundException])
   def genClass(pkgName: String, clzName: String, syms: Array[Symbol]): CharSequence = {
     val javaCode = new StringBuilder(1024)

@@ -87,7 +87,7 @@ object ScalaHome {
     //System.out.println("boot:" + sb);
     settings.bootclasspath.value = sb.toString
 
-    sb.delete(0, sb.length - 1)
+    sb.clear()
     sb.append(getJavaClassPath)
     sb.append(File.pathSeparator)
     sb.append(toScalaClassPathString(null, scalaLib))
