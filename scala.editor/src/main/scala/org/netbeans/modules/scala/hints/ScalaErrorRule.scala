@@ -43,6 +43,7 @@ import org.netbeans.modules.csl.api.Hint
 import org.netbeans.modules.csl.api.Rule
 import org.netbeans.modules.csl.api.Error
 
+//TODO is this class needed?
 abstract class ScalaErrorRule extends Rule.ErrorRule {
     
     def createHints(context : ScalaRuleContext, error : Error) : List[Hint]

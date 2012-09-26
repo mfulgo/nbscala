@@ -44,6 +44,7 @@ import org.netbeans.editor.BaseDocument
 import org.netbeans.modules.scala.core.lexer.{ScalaTokenId, ScalaLexUtil}
 import org.netbeans.spi.editor.bracesmatching.{BracesMatcher, MatcherContext}
 
+//TODO Investigate moving this functionality to BracesMatcherFactory per the JavaDoc for BracesMatcher.
 /**
  *
  * @author Caoyuan Deng

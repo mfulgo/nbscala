@@ -41,6 +41,7 @@ package org.netbeans.modules.scala.editor.util
 
 import org.openide.util.NbBundle
 
+//TODO see if this can be removed
 trait NbBundler {
 
     def locMessage(key : String) = NbBundle.getMessage(getClass, key)

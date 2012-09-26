@@ -71,6 +71,7 @@ import org.netbeans.editor.BaseDocument
 
 import org.netbeans.modules.scala.editor.imports.FixImportsHelper
 
+//TODO is this class even used?
 class ClassNotFoundRule extends ScalaErrorRule with NbBundler {
 
     val DEFAULT_PRIORITY = 292
